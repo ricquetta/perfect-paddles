@@ -1,0 +1,16 @@
+h1{
+  color:violet;
+  font-size:80px;
+}
+
+.hilight{
+  color:cyan;
+}
+
+/* never use an id to style elements - css works on rules of specificity -
+id tags can only be used on one element - lends itself for to repetiveness (dry) -
+ids are mainly used for javascripts */
+
+#banner_text{
+  color:goldenrod;
+}
