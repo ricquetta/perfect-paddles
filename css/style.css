@@ -4,17 +4,69 @@ h1{
 }
 /* bottom takes priority over the top */
 
-.hilight{
-  color:cyan;
+body{
+  font-size:16px;
+  line-height: 1.25em;
+  box-sizing: border-box;
 }
 
-.embiggen{
-  font-weight: 300;
+header img {
+  max-width: 60%
 }
+
+nav ul{
+  padding:;
+  margin:0 auto;
+  list-style: none;
+  max-width: 70%;
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 1em;
+}
+
+nav ul li a{
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.banner{
+  background: linear-gradient(to top,
+    rgba(0, 0, 0, .35) 0%
+    rgba (0, 0, 0, .25)100%
+    ),
+    url('images/kayak-bkgd.jpg');
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    padding: 4em 0;
+}
+
+
 /* never use an id to style elements - css works on rules of specificity -
 id tags can only be used on one element - lends itself to repetiveness (dry - do not repeat yourself) -
 ids are mainly used for javascripts */
 
 #banner_text{
   font-size:50px;
+}
+
+.page-title-enjoy{
+  text-transform: uppercase;
+}
+
+.cursive{
+  font-family: 'zapfino';
+}
+
+.big{
+  font-size: 40px;
+}
+
+.circle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
