@@ -1,13 +1,54 @@
-h1{
-  color:violet;
-  font-size:80px;
-}
+
 /* bottom takes priority over the top */
 
+@font-face {
+  font-family:'karla';
+  src: url(fonts/Karla-Regular.ttf) format('truetype');
+
+}
+.karla {font-family:'Karla-Regular';}
+
+@font-face {
+  font-family:'Karla Bold';
+  src: url(fonts/karla-bold.ttf) format('truetype');
+  font-weight: bold;
+}
+.karla-bold {font-family: 'Karla-Bold';}
+
+@font-face{
+  font-family:'Pacifico';
+  src: url(fonts/pacifico.tff) format ('truetype');
+}
+.pacifico {font-family:'Pacifico';}
+
 body{
+  font-family: karla, sans-serif;
   font-size:16px;
   line-height: 1.25em;
   box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+
+}
+
+h1, h2{
+ text-align: center;
+}
+
+h2{
+  font-family: "pacfico, sans-serif";
+  font-size: 16em;
+  color: #fff;
+  margin: 1em auto;
+}
+
+header{
+  background-color: black;
+  text-align: center;
+  padding-top:10px;
+
 }
 
 header img {
@@ -15,7 +56,7 @@ header img {
 }
 
 nav ul{
-  padding:;
+  padding:1em 0;
   margin:0 auto;
   list-style: none;
   max-width: 70%;
@@ -32,41 +73,111 @@ nav ul li a{
    text-transform: uppercase;
 }
 
-.banner{
-  background: linear-gradient(to top,
-    rgba(0, 0, 0, .35) 0%
-    rgba (0, 0, 0, .25)100%
-    ),
-    url('images/kayak-bkgd.jpg');
-    background-position: top center;
-    background-size: cover;
+main{
+  margin:;
+
+}
+
+footer{
+    background: #222222;
+    color: white;
     text-align: center;
-    padding: 4em 0;
+    padding:;
+}
+
+p{
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+
+a{
+  color: cyan;
+
+}
+
+.banner {
+    background: linear-gradient(to top,
+      rgba(0, 0, 0, .35) 0%,
+      rgba(0, 0, 0, .25) 100%
+    ),
+    url('../images/kayak-bkgd.jpg');
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding: 4em 0;
 }
 
 
-/* never use an id to style elements - css works on rules of specificity -
-id tags can only be used on one element - lends itself to repetiveness (dry - do not repeat yourself) -
-ids are mainly used for javascripts */
-
-#banner_text{
-  font-size:50px;
+.page-title span{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5em 0;
 }
 
-.page-title-enjoy{
+.enjoy-the {
+  font-size: 2em;
   text-transform: uppercase;
 }
 
-.cursive{
-  font-family: 'zapfino';
+.great-outdoors .from-the-water {
+  text-shadow: 2px 2px 2px #999;
 }
 
-.big{
-  font-size: 40px;
+.great-outdoors {
+  font-size: 3em;
 }
 
-.circle{
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+.from-the-water{
+  font-size: 2.5em;
 }
+
+.banner p {
+  color: white;
+  background-color: rgba(0,0,0, .5);
+  text-align: center;
+  margin: 1.5em auto;
+  margin-bottom: 3em;
+  padding: 1em;
+  width: 75%;
+
+}
+
+.about {
+  text-align: center;
+}
+
+.promo-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+.promo-images img {
+  width: 100%;
+  margin: .5em 0;
+  box-shadow:  1px 0 5px 1px #666;
+
+}
+
+footer p {
+  margin-bottom: 1em;
+
+}
+
+footer a{
+  color: white;
+
+}
+
+footer nav ul{
+  justify-content: center;
+}
+
+footer ul li {
+  margin: .5em;
+}
+/* never use an id to style elements - css works on rules of specificity -
+id tags can only be used on one element - lends itself to repetiveness (dry - do not repeat yourself) -
+ids are mainly used for javascripts */
