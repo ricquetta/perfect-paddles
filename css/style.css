@@ -2,30 +2,35 @@
 /* bottom takes priority over the top */
 
 @font-face {
-  font-family:'karla';
+  font-family:'Karla-Regular';
   src: url(fonts/Karla-Regular.ttf) format('truetype');
-
 }
-.karla {font-family:'Karla-Regular';}
+
+.karla {font-family:'karla-regular';}
 
 @font-face {
-  font-family:'Karla Bold';
+  font-family:'karla-bold';
   src: url(fonts/karla-bold.ttf) format('truetype');
   font-weight: bold;
 }
 .karla-bold {font-family: 'Karla-Bold';}
 
 @font-face{
-  font-family:'Pacifico';
-  src: url(fonts/pacifico.tff) format ('truetype');
+  font-family:'pacifico';
+  src: url(fonts/pacifico.ttf) format ('truetype');
 }
-.pacifico {font-family:'Pacifico';}
+.pacifico {font-family:'pacifico';}
 
 body{
-  font-family: karla, sans-serif;
+  font-family: karla;
   font-size:16px;
   line-height: 1.25em;
   box-sizing: border-box;
+  margin: 0px;
+}
+
+.display-type  {
+font-size: .5em;
 }
 
 img{
@@ -38,8 +43,8 @@ h1, h2{
 }
 
 h2{
-  font-family: "karla, sans-serif";
-  font-size: 16px;
+  font-family:'pacifico';
+  font-size: 2em;
   color: #000000;
   margin: 1em auto;
 }
@@ -60,6 +65,9 @@ nav ul{
   margin:0 auto;
   list-style: none;
   max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 nav ul li{
@@ -107,16 +115,15 @@ a{
   padding: 4em 0;
 }
 
-
 .page-title span{
   display: block;
   color: white;
   text-align: center;
-  padding: 5em 0;
+  padding: .5em 0;
 }
 
 .enjoy-the {
-  font-size: 2em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -129,7 +136,7 @@ a{
 }
 
 .from-the-water{
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .banner p {
@@ -139,7 +146,7 @@ a{
   margin: 1.5em auto;
   margin-bottom: 3em;
   padding: 1em;
-  width:75%;
+  width:70%;
 
 }
 
@@ -147,18 +154,22 @@ a{
   text-align: center;
 }
 
-.promo-images {
+.rentals {
+ text-align: center;
+}
+
+.pretty-images {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
 
-}
-.promo-images img {
-  width: 100%;
-  margin: .5em 0;
-  box-shadow:  1px 0 5px 1px #666;
 
+}
+.pretty-images img {
+  width: 100%;
+  margin: .5em 0 0 0;
+  box-shadow:  1px 0 5px 1px #666;
 }
 
 footer p {
@@ -179,11 +190,47 @@ footer ul li {
   margin: .5em;
 }
 
-@ @media screen and (min-width: 600px){
-  {
+
+/*--- tablet ---*/
+@media (min-width: 600px) {
+
+
+  .pretty-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
 
   }
-}
+
+  .pretty-images img {
+    width: 32.5%;
+    margin: .5em 0 0 0;
+    box-shadow:  1px 0 5px 1px #666;
+
+  }
+	}
+
+/*--- desktop ---*/
+
+@media (min-width: 1140px) {
+
+  .pretty-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+
+  }
+
+  .pretty-images img {
+    width: 32.5%;
+    margin: .5em 0 0 0;
+    box-shadow:  1px 0 5px 1px #666;
+	}
+	}
+
+
 
 /* never use an id to style elements - css works on rules of specificity -
 id tags can only be used on one element - lends itself to repetiveness (dry - do not repeat yourself) -
