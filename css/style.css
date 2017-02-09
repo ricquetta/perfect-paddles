@@ -27,6 +27,7 @@ body{
   line-height: 1.25em;
   box-sizing: border-box;
   margin: 0px;
+  color: #2d2d2d;
 }
 
 .display-type  {
@@ -45,7 +46,7 @@ h1, h2{
 h2{
   font-family:'pacifico';
   font-size: 2em;
-  color: #000000;
+  color: #646464;
   margin: 1em auto;
 }
 
@@ -54,14 +55,17 @@ header{
   text-align: center;
   padding-top:10px;
 
+
 }
 
 header img {
   max-width:60%;
+
 }
 
+
 nav ul{
-  padding:1em 0;
+  padding:1em 1em;
   margin:0 auto;
   list-style: none;
   max-width: 70%;
@@ -122,21 +126,21 @@ a{
   padding: .5em 0;
 }
 
-.enjoy-the {
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
 .great-outdoors .from-the-water {
   text-shadow: 2px 2px 2px #999;
 }
 
+.enjoy-the {
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
 .great-outdoors {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .from-the-water{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .banner p {
@@ -194,6 +198,12 @@ footer ul li {
 /*--- tablet ---*/
 @media (min-width: 600px) {
 
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
   .pretty-images {
     display: flex;
@@ -209,8 +219,49 @@ footer ul li {
     box-shadow:  1px 0 5px 1px #666;
 
   }
+  .enjoy-the {
+    font-size: .75em;
+    text-transform: uppercase;
+  }
+
+  .great-outdoors {
+    font-size: 3em;
+  }
+
+  .from-the-water{
+    font-size: 1.5em;
+  }
+
 	}
 
+  input{
+    font-family:'karla';
+    font-size: 1em;
+    color: #646464
+    padding: .5em 1em;
+    outline: 1px solid #fcfcfc;
+    background-color: #fcfcfc;
+  }
+
+input:focus, textarea:focus{
+  outline: 1px solid #fcfcfc;
+  background-color: #fcfcfc;
+}
+
+  textarea{
+    font-family:'karla';
+    font-size: 1em;
+    color: #646464
+    padding: .5em 1em;
+    outline: 1px solid #fcfcfc;
+    background-color: #fcfcfc;
+  }
+
+  button{
+   font-family: 'karla';
+   color: #646464
+
+  }
 /*--- desktop ---*/
 
 @media (min-width: 1140px) {
@@ -228,7 +279,21 @@ footer ul li {
     margin: .5em 0 0 0;
     box-shadow:  1px 0 5px 1px #666;
 	}
-	}
+
+  .enjoy-the {
+    font-size: .75em;
+    text-transform: uppercase;
+  }
+
+  .great-outdoors {
+    font-size: 3em;
+  }
+
+  .from-the-water{
+    font-size: 1.5em;
+  }
+
+  }
 
 
 
