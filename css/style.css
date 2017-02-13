@@ -28,6 +28,7 @@ body{
   box-sizing: border-box;
   margin: 0px;
   color: #2d2d2d;
+
 }
 
 .display-type  {
@@ -36,6 +37,7 @@ font-size: .5em;
 
 img{
   max-width: 100%;
+
 
 }
 
@@ -100,6 +102,7 @@ footer{
 p{
   line-height: 2em;
   margin-bottom: 2em;
+  padding: 1em;
 }
 
 a{
@@ -119,6 +122,17 @@ a{
   padding: 4em 0;
 }
 
+.banner p {
+  color: white;
+  background-color: rgba(0,0,0, .5);
+  text-align: center;
+  margin: 1em auto;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  width:50%;
+
+}
+
 .page-title span{
   display: block;
   color: white;
@@ -127,7 +141,7 @@ a{
 }
 
 .great-outdoors .from-the-water {
-  text-shadow: 2px 2px 2px #999;
+  text-shadow: 1px 1px 1px #646464;
 }
 
 .enjoy-the {
@@ -143,17 +157,15 @@ a{
   font-size: 1em;
 }
 
-.banner p {
-  color: white;
-  background-color: rgba(0,0,0, .5);
-  text-align: center;
-  margin: 1.5em auto;
-  margin-bottom: 3em;
-  padding: 1em;
-  width:70%;
+.btn-signup{
+  text-transform: uppercase;
+  background-color: #e2574c;
+  color: #ffffff;
+  padding: .5em .5em;
+  border-radius: 2em;
+
 
 }
-
 .about {
   text-align: center;
 }
@@ -174,6 +186,13 @@ a{
   width: 100%;
   margin: .5em 0 0 0;
   box-shadow:  1px 0 5px 1px #666;
+}
+
+iframe{
+  width: 100%;
+  padding: 15px auto;
+
+
 }
 
 footer p {
@@ -202,7 +221,20 @@ footer ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 3px 3px
   }
+
+  header img{
+    padding-left: 15px;
+  }
+
+  nav li{
+      padding-right: 15px;
+  }
+
+  /*.banner{
+    padding-left: 30px;
+  }*/
 
 
   .pretty-images {
@@ -232,9 +264,8 @@ footer ul li {
     font-size: 1.5em;
   }
 
-	}
 
-  input{
+  /*input{
     font-family:'karla';
     font-size: 1em;
     color: #646464
@@ -252,7 +283,7 @@ input:focus, textarea:focus{
     font-family:'karla';
     font-size: 1em;
     color: #646464
-    padding: .5em 1em;
+    paddning: .5em 1em;
     outline: 1px solid #fcfcfc;
     background-color: #fcfcfc;
   }
@@ -261,7 +292,7 @@ input:focus, textarea:focus{
    font-family: 'karla';
    color: #646464
 
-  }
+  }*/
 /*--- desktop ---*/
 
 @media (min-width: 1140px) {
