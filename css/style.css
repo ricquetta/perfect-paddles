@@ -277,7 +277,7 @@ footer ul li {
 
   header img{
     padding-left: 15px;
-    max-width: 40%;
+    max-width: 35%;
   }
 
   nav li{
@@ -347,10 +347,30 @@ footer nav ul li {
     display: inline;
   }
 
-.rentals article, .rentals table{
-  width: 49%;
+.rentals{
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /*align-items: flex-end;*/
+  /*text-align: left;*/
+  /*width: 49%;*/
 
 }
+
+.rentals article{
+  text-align: left;
+  width: 49%;
+}
+
+.rentals table{
+  flex-direction: column;
+
+}
+
+.rentals article, .rentals table{
+  margin: 1em 1em;
+}
+
 
 /*--- desktop ---*/
 
