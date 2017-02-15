@@ -37,8 +37,6 @@ font-size: .5em;
 
 img{
   max-width: 100%;
-
-
 }
 
 h1, h2{
@@ -56,13 +54,10 @@ header{
   background-color: black;
   text-align: center;
   padding-top:10px;
-
-
 }
 
 header img {
   max-width:60%;
-
 }
 
 
@@ -72,7 +67,6 @@ nav ul{
   list-style: none;
   display: flex;
   justify-content: space-around;
-
 }
 
 nav ul li{
@@ -88,7 +82,6 @@ nav ul li a{
 
 main{
     margin: .5em;
-
 }
 
 footer{
@@ -130,7 +123,6 @@ a{
   padding: 0.5em;
   width:70%;
   line-height: 1em;
-
 }
 
 .page-title span{
@@ -157,7 +149,7 @@ a{
   font-size: 1em;
 }
 
-.btn-signup{
+.signup-button{
   text-transform: uppercase;
   background-color: #e2574c;
   color: #ffffff;
@@ -166,14 +158,12 @@ a{
   border-radius: 2em;
 }
 
-.btn-signup:hover{
+.singup-button:hover{
   background-color:#b64036;
   color: white;
-
-
 }
 
-.muted-text {
+.grey-text {
   color: #999;
 }
 
@@ -207,18 +197,20 @@ a{
   font-weight: bold;
   padding: .5em 0;
 }
+
 .rentals td {
   width: 33%;
   text-align: center;
   padding: .5em;
 }
+
 .rentals td:first-child {
   text-align: left;
 }
+
 .rentals tr:hover {
   background-color: #fbf6d9;
 }
-
 
 .locations{
   text-align: center;
@@ -229,9 +221,8 @@ a{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-
-
 }
+
 .pretty-images img {
   width: 100%;
   margin: .5em 0 0 0;
@@ -242,8 +233,6 @@ iframe{
   width: 100%;
   padding-bottom: 5em;
   margin: .5em 0 0 0;
-
-
 }
 
 footer p {
@@ -268,23 +257,23 @@ footer ul li {
 /*--- tablet ---*/
 @media (min-width: 600px) {
 
-  header{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px 3px
   }
 
-  header img{
+header img{
     padding-left: 15px;
     max-width: 35%;
   }
 
-  nav li{
+nav li{
       padding-right: 15px;
   }
 
-  footer {
+footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -307,7 +296,7 @@ footer nav ul li {
 
 }
 
-  .banner p {
+.banner p {
     color: white;
     background-color: rgba(0,0,0, .5);
     text-align: center;
@@ -316,7 +305,8 @@ footer nav ul li {
     width:70%;
     line-height: 1em;
 }
-  .pretty-images {
+
+.pretty-images {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -324,36 +314,32 @@ footer nav ul li {
 
   }
 
-  .pretty-images img {
+.pretty-images img {
     width: 32.5%;
     margin: .5em 0 0 0;
     box-shadow:  1px 0 5px 1px #666;
 
   }
-  .enjoy-the {
+.enjoy-the {
     font-size: .75em;
     text-transform: uppercase;
   }
 
-  .great-outdoors {
+.great-outdoors {
     font-size: 3em;
   }
 
-  .from-the-water{
+.from-the-water{
     font-size: 1.5em;
   }
 
-  .social-link-words{
+.social-link-words{
     display: inline;
   }
 
 .rentals{
-
   flex-flow: row wrap;
   justify-content: space-around;
-  /*align-items: flex-end;*/
-  /*text-align: left;*/
-  /*width: 49%;*/
 
 }
 
@@ -364,6 +350,7 @@ footer nav ul li {
 
 .rentals table{
   flex-direction: column;
+  width: 40%;
 
 }
 
@@ -371,6 +358,7 @@ footer nav ul li {
   margin: 1em 1em;
 }
 
+}
 
 /*--- desktop ---*/
 
@@ -387,9 +375,6 @@ footer article {
 
  .rentals table {
   width: 40%;
-
-
-
 }
 
 }
